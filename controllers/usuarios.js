@@ -272,7 +272,7 @@ function updateFoto(req, res) {
                       .status(404)
                       .send({ message: "No se ha encontrado ningun usuario." });
                   } else {
-                    res.status(200).send({ usuario: usuario });
+                    res.status(200).send({ usuario: fileName });
                   }
                 }
               }
